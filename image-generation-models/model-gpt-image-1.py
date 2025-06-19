@@ -10,7 +10,7 @@ import requests
 import re
 from datetime import datetime
 
-def generate_image_with_prompt(prompt, output_size="1024x1024"):
+def generate_image_with_prompt(prompt, output_size="1792x1024"):
     response = openai.images.generate(
         model="dall-e-3",
         prompt=prompt,
